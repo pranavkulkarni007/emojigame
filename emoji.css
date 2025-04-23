@@ -1,0 +1,59 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  #restart {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #ff8360;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  #restart:hover {
+    background-color: #e67350;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-gap: 15px;
+  }
+  
+  .card {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card.flipped {
+    background-color: #fdf6ec;
+    transform: rotateY(180deg);
+  }
+  
+  .card.matched {
+    background-color: #d4edda;
+    cursor: default;
+  }
+  
